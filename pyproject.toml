@@ -12,7 +12,7 @@ python = "^3.10"
 
 pyxDamerauLevenshtein = "^1.7"
 orjson = "^3.9"
-requests = "^2.31"
+requests = "^2.32"
 structlog = "^23.1"
 
 black = { version = "^24.2", optional = true }
