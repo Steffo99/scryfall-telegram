@@ -41,7 +41,7 @@ def suggest_alternatives(msg: Message, query: Query):
     cards = scryfall.search_cards(query.to_scryfall_query(), unique="art")
 
     # Limit our results to 3 to not overpopulate the response keyboard:
-    PAGE_SIZE = 3
+    PAGE_SIZE = 8
     offset = (query.page - 1) * PAGE_SIZE
     card_page = cards[offset : offset + PAGE_SIZE]
     has_prev = query.page > 1
